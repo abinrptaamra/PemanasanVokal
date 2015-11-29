@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    tools:context=".latper"
+    android:background="#41A8F5">
+
+
+
+    <include android:id ="@+id/app_bar"
+        layout="@layout/app_bar"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnhum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_hum"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btngoogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_googo" />
+
+        <Button
+            android:id="@+id/btngnung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_gnung" />
+
+        <Button
+            android:id="@+id/btnaaah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_aaah" />
+
+        <Button
+            android:id="@+id/btnooze"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_ooze" />
+
+    </LinearLayout>
+
+</LinearLayout>

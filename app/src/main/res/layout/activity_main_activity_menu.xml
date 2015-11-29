@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivityMenu"
+    android:background="#41A8F5">
+    <include android:id ="@+id/app_bar"
+            layout="@layout/app_bar"
+         />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnlatper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/custom2"
+            android:layout_below="@+id/btnpemanasan"
+            android:layout_alignLeft="@+id/btnpemanasan"
+            android:layout_alignStart="@+id/btnpemanasan"
+            android:layout_marginTop="25dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/btnpemanasan"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom"
+            android:layout_marginTop="60dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

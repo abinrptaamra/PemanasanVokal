@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical"
+
+    tools:context=".latper"
+    android:background="#41A8F5"
+    android:weightSum="1"
+    android:backgroundTintMode="src_over"
+    android:backgroundTint="#41A8F5">
+
+    <include android:id ="@+id/app_bar"
+        layout="@layout/app_bar"/>
+    <RadioGroup
+        android:id="@+id/radioGrupdetik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rb8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_8"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/rb12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_12" />
+        <RadioButton
+            android:id="@+id/rb16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_16" />
+        <RadioButton
+            android:id="@+id/rb20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_20" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="0.67">
+
+        <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chronometer"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:id="@+id/animation"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:backgroundTint="#4f4f4f"
+        android:backgroundTintMode="src_over"
+        android:background="#4f4f4f">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/playbutton"
+            android:src="@drawable/playbutton"
+            android:layout_marginLeft="53dp"
+            android:layout_marginStart="53dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#4f4f4f"
+            android:backgroundTintMode="src_over"
+            android:backgroundTint="#4f4f4f" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stopbutton"
+            android:src="@drawable/stopbutton"
+            android:layout_marginRight="59dp"
+            android:layout_marginEnd="59dp"
+            android:layout_alignTop="@+id/playbutton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="#4f4f4f"
+            android:backgroundTint="#4f4f4f"
+            android:backgroundTintMode="src_over" />
+    </RelativeLayout>
+</LinearLayout>

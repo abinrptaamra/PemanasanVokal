@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="abinrptaamra.pemanasanvokal" >
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".MainActivityMenu"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PilihPemanasan"
+            android:label="Daftar Latihan Pemanasan"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivityMenu" />
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".Pemanasan"
+            android:label="Latihan Pemanasan Vokal"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PilihPemanasan" />
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Demo"
+            android:label="Demo Latihan Pemanasan Vokal"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PilihPemanasan" />
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Latper"
+            android:label="Latihan Pernafasan"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivityMenu" />
+            <intent-filter>
+                <action android:name="android.intent.action.DETAIL" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>
